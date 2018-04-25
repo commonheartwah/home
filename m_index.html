@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>宝宝玩英语</title>
+        <meta name="keywords" content="宝宝玩英语,英语,儿童教育,早教">
+        <meta name="description" content="宝宝玩英语">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+        <style media="screen">
+            *{margin:0;padding:0;border:none;}
+            html{width: 100%;font-size: 100px;font-family: "Hiragino Sans GB",sans-serif;}
+            @media (min-device-width : 375px) and (max-device-width : 667px) and (-webkit-min-device-pixel-ratio : 2){
+                html{font-size: 117.1875px;}
+            }
+            @media (min-device-width : 414px) and (max-device-width : 1024px) and (-webkit-min-device-pixel-ratio : 3){
+                html{font-size: 129.375px;}
+            }
+            body{width: 100%;overflow-y: scroll;font-size: 0.13rem;line-height: 1.5;color:#333;background:#F5F7FA;min-height:100%;text-align: center;}
+            .img{width:100%;height:auto;}
+            a.btn{display:inline-block;height:.4rem;border-radius:.2rem;line-height: .4rem;background:#63C9B2;color:#fff;text-decoration:none;padding:0 .4rem;margin:.2rem auto;font-size:16px;font-weight:0;-webkit-user-select: none; -webkit-touch-callout: none; -webkit-backface-visibility: hidden; }
+            footer{color:#a1a1a1;padding:5px 0 15px;line-height:150%;}
+            b{color:#59C6AE;}
+            .video-box{position:relative;}
+            .video{position:absolute;display:block;width:1.5rem;height:1.5rem;border-radius:50%;left:50%;margin-left:-.75rem;}
+            .v1{top:14%;}
+            .v2{top:46%;}
+            .v3{top:75.5%;}
+        </style>
+
+    </head>
+    <body>
+        <img src="r/1.png" class="img" alt="">
+        <img src="r/2.png" class="img" alt="">
+        <img src="r/3.png" class="img" alt="">
+        <img src="r/4.png" class="img" alt="">
+        <img src="r/5.png" class="img" alt="">
+        <img src="r/6.png" class="img" alt="">
+        <div class="video-box">
+            <img src="r/7.png" class="img" alt="">
+            <img src="r/8.png" class="img" alt="">
+            <a href="http://v.s.babyfs.cn/05f6bb35e40a4eab384a8ec965369ffcf3328daa.mp4" class="video v1"></a>
+            <a href="http://v.s.babyfs.cn/d8dfcdedd8af93184e0ee6269ceda98725accbba.mp4" class="video v2"></a>
+            <a href="http://v.s.babyfs.cn/f69c060b29ed97688bf8f2d5e62edff8bb58fb1d.mp4" class="video v3"></a>
+        </div>
+        <img src="r/9.png" class="img" alt="">
+        <a href="https://t.babyfs.cn/test/ck/2018/babyfsWeChat20180226/index01a.html" class="btn">领取免费集训营课程</a>
+        <!-- <a href="https://t.babyfs.cn/test/ck/2018/babyfsWeChat2018/index01.html" class="btn">领取免费集训营课程</a> -->
+        <footer>
+            商务合作：<b>bd@babyfs.cn</b>
+            <p>公司地址：北京市朝阳区望京SOHO T3-B座1608</p>
+            <p>京IPC备16005798号 北京启萌教育有限公司</p>
+        </footer>
+        <script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+        <script type="text/javascript" src="https://s0.babyfs.cn/op/arch/48/324b7abbe0a84deda88d333008e0c4d8/zepto/zepto.min.js"></script>
+        <script type="text/javascript">
+
+            $.get('https://m.babyfs.cn/api/wx/js_api_conf',
+                {
+                    wx_app: 'invite',
+                    url: location.href
+                },
+                function(res){
+                    var d = res.data;
+    				wx.config({
+    					debug: false, // 开启调试模式,调用的所有api的返回值会在客户端alert出来，若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。
+    					appId: d.appId, // 必填，企业号的唯一标识，此处填写企业号corpid
+    					timestamp: d.timestamp, // 必填，生成签名的时间戳
+    					nonceStr: d.nonceStr, // 必填，生成签名的随机串
+    					signature: d.signature, // 必填，签名，见附录1
+    					jsApiList: ['onMenuShareAppMessage'] // 必填，需要使用的JS接口列表，所有JS接口列表见附录2
+    				});
+                    wx.ready(function() {
+                        wx.onMenuShareAppMessage({
+                            title: '宝宝玩英语', // 分享标题
+                            desc: '0-6岁家庭陪伴式幼儿英语启蒙开创者，宝宝出生就能玩的英语课', // 分享描述
+                            link: 'http://www.babyfs.cn/', // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
+                            imgUrl: 'http://i.s.babyfs.cn/op/1/1dbf0cc4bab74156a6e61d5eafcc00dc.png', // 分享图标
+                            type: '', // 分享类型,music、video或link，不填默认为link
+                            dataUrl: '',
+                            success: function (e) {
+
+                            },
+                            cancel: function(e){
+
+                            }
+                        });
+                    })
+                }
+            )
+
+        </script>
+    </body>
+</html>

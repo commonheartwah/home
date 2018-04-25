@@ -1,0 +1,49 @@
+.banCode,
+.banCode02 {
+  position: absolute;
+  right: 0;
+  top: 100px;
+  width: 235px;
+  height: 302px;
+  border-radius: 5px;
+  z-index: 9;
+}
+.banCode img,
+.banCode02 img {
+  width: 100%;
+}
+.banCode span,
+.banCode02 span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  background-color: #ebebeb;
+  color: #8f8f8f;
+  border-radius: 3px;
+}
+.banCode02 {
+  right: 50%;
+  margin-right: -117.5px;
+  top: 780px;
+  height: 322px;
+}
+.banCode02 img {
+  height: 100%;
+}
+
+.next-screen-button {
+    width: 70px;
+    position: absolute;
+    bottom: 82px;
+    z-index: 9;
+    left: 50%;
+    margin-left: -36px;
+}
+
+.next-screen-button img {
+    width: 100%;
+}

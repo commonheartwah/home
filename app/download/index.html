@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>宝玩app下载</title>
+  <link rel="stylesheet" href="../../lib/reset.css">
+  <link rel="stylesheet" href="../../css/download.css">
+  <script src="../../lib/flexible.js" charset="utf-8"></script>
+</head>
+
+<body>
+  <div class="downloadPage">
+    <div class="main">
+        <section class="phone">
+          <img src="../../images/download/phone.png" alt="../download/images/download/phone.png">
+        </section>
+        <section class="downloadBtn">
+          <div class="ios" onclick='ios_download()'>iPhone</div>
+          <div class="android" onclick='andriod_download()'>Android</div>
+        </section>
+    </div>
+  </div>
+</body>
+<script type="text/javascript">
+  function ios_download() {
+    // iTunes的地址
+    window.location.href = 'https://itunes.apple.com/cn/app/id1229566596?mt=8';
+    if( window.fromTrainCamp ) {
+        try {
+            MtaH5.clickStat( 'appdownload', {
+                'iosorandriod': 'ios'
+            } )
+        } catch( e ) {
+            console.log( e );
+        }
+    }
+  }
+
+  function andriod_download() {
+    // 应用宝的地址
+    window.location.href = 'http://a.app.qq.com/o/simple.jsp?pkgname=cn.babyfs.android';
+    if( window.fromTrainCamp ) {
+        try {
+            MtaH5.clickStat( 'appdownload', {
+                'iosorandriod': 'android'
+            } )
+        } catch( e ) {
+            console.log( e );
+        }
+    }
+  }
+  /**
+   * 获取url参数值
+   * @param  {[string]} name [key]
+   * @return {[type]}      [description]
+   */
+  var getQueryString = function( name ) {
+      var reg = new RegExp( '(^|&)' + name + '=([^&]*)(&|$)', 'i' );
+      var r = window.location.search.substr( 1 ).match( reg );
+      if( r != null ) {
+          return unescape( r[ 2 ] );
+      }
+      return null;
+  }
+  window.onload = function (){
+      if (getQueryString('downloadFrom') === 'trainCamp') {
+          window.fromTrainCamp = true
+          try {
+              MtaH5.clickStat( 'appdownload' )
+          } catch( e ) {
+              console.log( e );
+          }
+      }
+  }
+</script>
+
+<script type="text/javascript" src="http://tajs.qq.com/stats?sId=64268548" charset="UTF-8"></script>
+<script>
+    var _mtac = {};
+    (function() {
+      var mta = document.createElement("script");
+      mta.src = "https://pingjs.qq.com/h5/stats.js?v2.0.4";
+      mta.setAttribute("name", "MTAH5");
+      mta.setAttribute("sid", "500514440");
+      mta.setAttribute("cid", "500514441");
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(mta, s);
+    })();
+</script>
+</html>

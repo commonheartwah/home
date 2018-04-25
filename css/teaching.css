@@ -1,0 +1,289 @@
+.w {
+  width: 1000px;
+  margin: 0 auto;
+}
+body {
+  width: 100%;
+  font-family: '微软雅黑';
+}
+body .banner {
+  width: 100%;
+}
+body .banner img {
+  width: 100%;
+}
+body .one_floor {
+  position: relative;
+}
+body .one_floor h2 {
+  width: 416px;
+  height: 30px;
+  text-align: center;
+  line-height: 36px;
+  margin: 0 auto;
+  font-size: 30px;
+  font-weight: normal;
+  margin-top: 30px;
+}
+body .one_floor .underline {
+  width: 572px;
+  margin: 30px auto 0;
+  border-bottom: 1px dashed #febda9;
+}
+body .one_floor .top {
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 450px;
+  background: url('../images/teaching/teachingbg.jpg') top center no-repeat;
+  background-size:60% auto;
+}
+body .one_floor .top .part {
+  width: 25%;
+}
+body .one_floor .top .part h3 {
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  font-weight: normal;
+  padding: 5px;
+  margin-bottom: 8px;
+}
+body .one_floor .top .part:nth-of-type(1)  {
+  margin-left: 10%;
+}
+body .one_floor .top .part:nth-of-type(3)  {
+  margin-right: 10%;
+}
+body .one_floor .top .part:nth-of-type(1) h3 {
+  color: #20d5c4;
+}
+body .one_floor .top .part:nth-of-type(1) figure {
+  height: 240px;
+  background: #20d5c4;
+  text-align: center;
+  padding: 0.1px;
+  border-radius: 5%;
+}
+body .one_floor .top .part:nth-of-type(1) figure img {
+  display: block;
+  margin: 60px auto 20px auto;
+  width: 80px;
+}
+
+body .one_floor .top .part:nth-of-type(1) figure figcaption p {
+  font-size: 14px;
+  line-height: 24px;
+  color: #fff;
+}
+body .one_floor .top .part:nth-of-type(2) h3 {
+  color: #f6b900;
+}
+body .one_floor .top .part:nth-of-type(2) figure {
+  height: 280px;
+  background: #ecda36;
+  text-align: center;
+  padding: 0.1px;
+  border-radius: 5%;
+}
+body .one_floor .top .part:nth-of-type(2) figure img {
+  display: block;
+  margin: 80px auto 40px auto;
+  width: 80px;
+}
+body .one_floor .top .part:nth-of-type(2) figure figcaption p {
+  font-size: 14px;
+  line-height: 24px;
+  color: #fff;
+}
+body .one_floor .top .part:nth-of-type(3) h3 {
+  color: #fd5621;
+}
+body .one_floor .top .part:nth-of-type(3) figure {
+  height: 320px;
+  background: #ffa366;
+  text-align: center;
+  padding: 0.1px;
+  border-radius: 5%;
+}
+body .one_floor .top .part:nth-of-type(3) figure img {
+  display: block;
+  margin: 80px auto 80px auto;
+  width: 80px;
+}
+body .one_floor .top .part:nth-of-type(3) figure figcaption p {
+  font-size: 14px;
+  line-height: 24px;
+  color: #fff;
+}
+body .one_floor .center {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -120px;
+}
+body .one_floor .center p {
+  width: 80px;
+  height: 80px;
+  background-color: #20d5c4;
+}
+@media (max-width: 1000px) {
+  body .one_floor .center {
+    display: none;
+  }
+}
+body .one_floor .bottom {
+  width: 100%;
+  height: 500px;
+  background: url('../images/teaching/bottombg.jpg') top center no-repeat;
+  background-size: 90% auto;
+  position: relative;
+}
+body .one_floor .bottom h3 {
+  font-size: 30px;
+  font-weight: normal;
+  color: #f59100;
+  text-indent: 40px;
+  margin-top: 90px;
+}
+body .one_floor .bottom .circle {
+  font-size: 14px;
+  position: absolute;
+  left: 400px;
+  bottom:75px;
+}
+body .one_floor .bottom .kuang {
+  width: 220px;
+  font-size: 14px;
+  line-height: 24px;
+  color: #20d5c4;
+  position: absolute;
+  right: 85px;
+  bottom: 150px;
+}
+@media (max-width: 1440px) {
+  body .center {
+    display: none;
+  }
+  body .separate {
+    width: 1200px;
+    border: 1px dashed #febda9;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1441px) {
+  body .separate {
+    width: 1526px;
+    border: 1px dashed #febda9;
+    margin: 0 auto;
+  }
+}
+body .two_floor .w {
+  height: 100%;
+  margin: 30px auto;
+  position: relative;
+  /*background: url('../images/teaching/twofloorbg.png') center center no-repeat;
+  background-size: 100% auto;*/
+}
+body .two_floor .w .kuang {
+  width: 220px;
+  font-size: 14px;
+  line-height: 24px;
+  color: #20d5c4;
+  position: absolute;
+  z-index: 999;
+  left: 150px;
+  top: 190px;
+}
+body .two_floor .w .circle {
+  width: 320px;
+  font-size: 14px;
+  line-height: 24px;
+  position: absolute;
+  z-index: 999;
+  right: 60px;
+  bottom: 130px;
+}
+body .two_floor .w .circle b {
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 5px;
+  font-weight: normal;
+  display: block;
+}
+body .three_floor {
+  width: 100%;
+}
+body .three_floor .w {
+  position: relative;
+  height: 560px;
+  background: url('../images/teaching/threefloorbg.jpg') center center no-repeat;
+  background-size: 80% auto;
+}
+body .three_floor .w .kuang {
+  width: 220px;
+  font-size: 14px;
+  line-height: 24px;
+  color: #20d5c4;
+  position: absolute;
+  left: 175px;
+  top: 175px;
+}
+body .three_floor .w .circle {
+  width: 320px;
+  font-size: 14px;
+  line-height: 24px;
+  position: absolute;
+  right: 190px;
+  bottom: 95px;
+}
+body .three_floor .w .circle b {
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 5px;
+  font-weight: normal;
+  display: block;
+}
+body .four_floor {
+  width: 100%;
+  height: 560px;
+  background: url('../images/teaching/fourfloorbg.jpg') center center no-repeat;
+  margin-bottom: 50px;
+  background-size: auto 100%;
+}
+body .four_floor .w {
+  height: 100%;
+  position: relative;
+}
+body .four_floor .w .kuang {
+  width: 240px;
+  font-size: 14px;
+  line-height: 24px;
+  color: #20d5c4;
+  position: absolute;
+  right: 110px;
+  top: 180px;
+}
+body .four_floor .w .circle {
+  width: 360px;
+  font-size: 14px;
+  line-height: 24px;
+  position: absolute;
+  left: 160px;
+  bottom: 100px;
+}
+body .four_floor .w .circle b {
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 5px;
+  font-weight: normal;
+  display: block;
+}

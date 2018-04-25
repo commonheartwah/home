@@ -1,0 +1,89 @@
+.w {
+  width: 1000px;
+  margin: 0 auto;
+}
+body {
+  width: 100%;
+  font-family: '微软雅黑';
+}
+body .green {
+  width: 100%;
+  height: 1px;
+  background-color: #36d7b7;
+}
+body .main {
+  padding-top: 70px;
+}
+body .main h1 {
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+  font-weight: normal;
+  margin: 0 auto;
+  height: 20px;
+  line-height: 20px;
+}
+body .main .underline_icon {
+  width: 862px;
+  height: 19px;
+  background: url('../images/about/underline_icon.jpg') center center no-repeat;
+  display: block;
+  margin: 25px auto 5px;
+}
+body .main .content {
+  padding: 50px 10px 0 10px;
+  padding-bottom: 30px;
+  line-height: 30px;
+  font-size: 14px;
+  text-indent: 2em;
+}
+body .main .map img {
+  width: 100%;
+}
+body .main .investInfo {
+  padding: 0 20px;
+}
+body .main .investInfo h2 {
+  width: 100%;
+  height: 64px;
+  line-height: 64px;
+  border-bottom: 1px solid #3ab9a6;
+  background: url('../images/about/h2_left_icon.png') left center no-repeat;
+  background-size: 12px 33px;
+  text-indent: 20px;
+  font-size: 32px;
+  font-weight: normal;
+}
+body .main .investInfo section {
+  width: 100%;
+  border-bottom: 1px solid #b7b7b7;
+}
+body .main .investInfo section figure {
+  display: flex;
+}
+body .main .investInfo section figure img {
+  width: 125px;
+  height: 150px;
+}
+body .main .investInfo section figure figcaption {
+  padding-top: 20px;
+  padding-left: 25px;
+}
+body .main .investInfo section figure figcaption h3 {
+  font-size: 24px;
+}
+body .main .investInfo section figure figcaption p {
+  font-size: 18px;
+  line-height: 28px;
+}
+body .main .contact {
+  padding: 50px 0 40px 25px;
+}
+body .main .contact p {
+  font-size: 14px;
+  line-height: 30px;
+}
+body .main .contact p:first-child {
+  font-size: 16px;
+  font-weight: bold;
+}

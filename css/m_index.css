@@ -1,0 +1,81 @@
+html{height: 100%; position: relative; }
+body {padding: 0;margin: 0;height: 100%;background: #fff; color: #222; font-family: Helvetica,Tahoma,Arial}
+ul,li,p {margin: 0;padding: 0;list-style: none;}
+/*.top {height: 100%; overflow: hidden; width: 100%;}*/
+.download {position: absolute;bottom:1.8em; left: 0; width: 100%; text-align: center; z-index: 99999999;}
+.download img { width: 45%; }
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+}
+.swiper-wrapper {height: auto;}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: auto;
+    top:1em;
+    text-align: right;
+    width: 50%;
+    right: 0.5em;
+    left: auto;
+}
+.clear{clear:both; }
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {margin: 0 0.8em 0 0;}
+.swiper-pagination-bullet {width: 0.5em; height: 0.5em; background: #fff; border: 1px solid #000;}
+.swiper-pagination-bullet-active {background: rgba(0,0,0,0.2); border:  1px solid rgba(0,0,0,0.3);}
+.title_01 {  padding: 1em 0; }
+.title_01 img {  width: 100%;}
+.title_01 {padding-top: 1.5em;}
+
+.body-bg{position:fixed;top:0;left:0;width:100%;height:100%;z-index:-10}
+.body-bg div {background-size:cover;position:absolute;top:0;bottom:0;width:100%; height:100%}
+.bg1 {background: url("../images/t1bg.jpg") no-repeat center; background-size: 200% auto;}
+.bg2 {background: url("../images/t2bg.jpg") no-repeat center; background-size: 200% auto;}
+
+.whylist { padding: 2em 1em; background: #fff;}
+.whylist ul {float: left;}
+.whylist li { width: 50%; float: left; font-size: 0.8em; line-height: 1.2em;}
+.whylist li div {padding:1em;}
+.whylist li img {display: block; width: 100%; margin-bottom: 0.8em; }
+.whylist li p {height: 3.5em;}
+.lessons {background: #EFF5FA;}
+.title_02 {  padding: 1em 0; }
+.title_02 img { width: 100%;}
+.title_02 {padding-top: 1.5em;}
+
+.bblist {padding: 2em 1em 0 1em; background: #fff;}
+.bblist ul {display: inline-block;}
+.bblist li {display: block; text-align: center; border: 0.2em solid #D4DFE7; border-radius: 0.8em; margin: 1em 0 3em; padding: 1em 0 2em 0;}
+.bblist li img {width: 50%; margin: 0.3em 0 1.8em 0;}
+.bblist li .tit {font-size: 1.3em;  background: #fff; position: relative; top:-1.5em; width: 80%;  margin: 0 auto;}
+.bblist li p {font-size: 0.8em; width: 80%; margin: 0 auto; color: #666; text-align: left; padding: 0 1em;}
+.bottom_ad {position: relative; background: #fff;}
+.bottom_ad div {position: absolute; top: 4em; left: 0; width: 100%; z-index: 1; color: #fff; text-align: center;}
+.bottom_ad div p {font-size: 0.8em; margin-bottom: 1.5em;}
+.bottom_ad div span {font-size: 1.8em; padding-left: 0.5em;}
+.footer {text-align: center; font-size: 0.8em; color: #999; padding-bottom: 3em;background: #fff;}
+.download_foot {width: 45%; margin: 3em auto 0 auto;}
+.bottom {position: absolute; bottom: 0.5em; left: 0; width: 100%; text-align: center; z-index: 99999999999999999;}
+.bottom img {width: 1.5em;}
+
+/**/
+@media all and (orientation : landscape) {
+    .download img { width: 30%; }
+}

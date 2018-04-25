@@ -1,0 +1,14 @@
+.ex-main{
+	display: block;
+	margin: 0 auto;
+	background-color: #20d5c4;
+	padding-top: 50px;
+}
+.ex-main img{
+	display: block;
+	margin: 50px auto;
+	width: 800px;
+}
+.ex-main img:last-child{
+	margin: 0 auto;
+}

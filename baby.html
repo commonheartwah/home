@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>宝宝玩英语</title>
+	<link rel="stylesheet" href="./lib/reset.css">
+	<link rel="stylesheet" href="./css/common.css">
+	<link rel="stylesheet" href="./css/header.css">
+	<link rel="stylesheet" href="./css/footer.css">
+	<link rel="stylesheet" href="./css/baby.css">
+	<link rel="stylesheet" href="./lib/video-js.css">
+	<script type="text/javascript" src="./lib/videojs-ie8.js"></script>
+	<script type="text/javascript" src="./lib/video.js"></script>
+	<script type="text/javascript" src="./js/common.js" charset="utf-8"></script>
+</head>
+
+<body>
+	<header>
+		<div class="headerw">
+			<div class="left">
+				<h1>宝宝玩英语</h1>
+			</div>
+			<nav>
+				<div class="con_nav">
+					<a href="./index.html">
+						<!-- <img src="./images/header/nav1.jpg" alt="./images/header/nav1.jpg"> -->
+						<p>首页</p>
+					</a>
+					<a href="./index.html?system" class="goCourseSystem">
+						<!-- <img src="./images/header/nav2.jpg" alt="./images/header/nav2.jpg"> -->
+						<p>课程体系</p>
+					</a>
+					<a href="./teaching.html">
+						<!-- <img src="./images/header/nav3.jpg" alt="./images/header/nav3.jpg"> -->
+						<p>教学模式</p>
+					</a>
+					<a href="./course.html">
+						<!-- <img src="./images/header/nav4.jpg" alt="./images/header/nav4.jpg"> -->
+						<p>课程概览</p>
+					</a>
+					<a href="./baby.html" class="checked">
+						<!-- <img src="./images/header/nav5.jpg" alt="./images/header/nav5.jpg"> -->
+						<p>宝宝风采</p>
+					</a>
+					<a href="./download_pen.html">
+						<!-- <img src="./images/header/nav6.jpg" alt="./images/header/nav6.jpg"> -->
+						<p>点读专区</p>
+					</a>
+					<a href="./experience_course.html">
+						<!-- <img src="./images/header/nav7.png" alt="./images/header/nav7.png"> -->
+						<p>体验课</p>
+					</a>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<div class="banner">
+		<img src="./images/baby/baby_ban.jpg" alt="./images/baby/baby_ban.jpg">
+	</div>
+	<div class="banCode" style="display: none">
+		<span onclick="show_banCode()">X</span>
+		<img src="./images/home/course_code.jpg" alt="./images/home/course_code.jpg">
+	</div>
+	<div class="main">
+		<div class="w partOne">
+			<h2>宝宝玩英语
+        <span>小学员风采展示</span>
+      </h2>
+			<div class="videoContainer">
+				<video width="700" id="oVideo" class="video-js vjs-default-skin">
+          <source src="http://v.s.babyfs.cn/2cb6845cad6fe0b101ad4cdfe11100f13c10af42.mp4" type='video/mp4' />
+        </video>
+				<div class="playBtn">
+					<span></span>
+				</div>
+				<div class="posterimg">
+					<img width="700" src="./images/baby/poster.jpg">
+				</div>
+			</div>
+		</div>
+		<div class="partTwo">
+			<div class="w">
+				<h2>0-6岁是脑部发展黄金时期
+          <span>每个宝宝都是语言天才</span>
+        </h2>
+				<div class="content">
+					<p>刚出生的宝宝，大脑隐藏着可以学会全世界语言的可能性。</p>
+					<p>婴儿发出的非语言的呢喃儿语，是包含世界上所有语言的声音。因此，一般认为呢喃期的婴儿，是会倾听世界语言的声音。婴儿的语言能力，会随着这时期的环境，有很大的变化。在中文的环境中，就能学会说中文；在美语的环境中，就能学会说美语。</p>
+					<p>刚出生的宝宝，脑细胞之间的突触数量只有成人的十分之一，到2-3岁时，突触比出生时增加约20倍。3岁时，突触连接已是成人的两倍，这也就意味着此时孩子大脑的代谢率最高，学习能力和智能发展最快，远远超过成人。</p>
+					<p>所以，对宝宝而言，随着神经细胞突触数量和长度增加，此时是对外界的信息如海绵那样无选择地大量吸收的时期，越早开始学习英语，就能使脑部的语言区块的突触活跃发展，产生的兴趣越大。渐渐就会形成其优势所在，进而像学母语一般地自然学会英语。</p>
+				</div>
+			</div>
+		</div>
+		<p class="modifier"></p>
+		<div class="partThree w">
+			<figure>
+				<img src="./images/baby/01.jpg" alt="">
+				<figcaption>
+					<p>家长主导学习的家庭式启蒙</p>
+					<p>趣味教学打造家庭语言环境</p>
+				</figcaption>
+			</figure>
+			<figure>
+				<img src="./images/baby/02.jpg" alt="">
+				<figcaption>
+					<p>全网唯一按宝宝年龄发育特点</p>
+					<p>设计的体系课程</p>
+				</figcaption>
+			</figure>
+			<figure>
+				<img src="./images/baby/03.jpg" alt="">
+				<figcaption>
+					<p>每天10分钟</p>
+					<p>任何时间地点都能学</p>
+				</figcaption>
+			</figure>
+			<figure>
+				<img src="./images/baby/04.jpg" alt="">
+				<figcaption>
+					<p>班课跟读，班长督促学习</p>
+					<p>同频家长共同进步</p>
+				</figcaption>
+			</figure>
+			<figure>
+				<img src="./images/baby/05.jpg" alt="">
+				<figcaption>
+					<p>不要求家长英语水平</p>
+					<p>跟随课程省心高效</p>
+				</figcaption>
+			</figure>
+			<figure>
+				<img src="./images/baby/06.jpg" alt="">
+				<figcaption>
+					<p>愉快的课程主题给宝宝</p>
+					<p>更高质量的亲子陪伴</p>
+				</figcaption>
+			</figure>
+		</div>
+		<p class="underline"></p>
+		<div class="partFour">
+			<div class="w">
+				<h2>百万妈妈的信赖之选 :
+          <span>英语启蒙，只要宝宝玩英语！</span>
+        </h2>
+				<div class="floor_one">
+					<figure class="left">
+						<img src="./images/baby/001.jpg">
+					</figure>
+					<aside class="right">
+						<h3>
+              <b>格格妈</b>资深考研英语老师</h3>
+						<p>2016年5月，宝宝1岁半的时候遇到宝玩，随即被这种简单有趣的课程吸引，想必很多家长和我一样，看重的不是课程教了几个单词和几个句型，而是如何将这些单词和句型用宝宝喜欢的方式玩起来，带宝宝进入英文绘本世界的PAT THE BUNNY是在宝玩学习的，输出的第一首英文儿歌FINGER FAMILY 也是从宝玩学习的，就我自己来说，也是从只会唱最简单的twinkle twinkle little star到所有英文儿歌张口就来。趣味学习的整个过程已经在不知不觉中改变了我和孩子的整个亲子世界，充实，有趣，有爱。</p>
+						<p>爱宝玩，选择好的课程并一直跟随，是每位妈妈都该做的事情。</p>
+					</aside>
+				</div>
+				<div class="floor_two">
+					<figure class="left">
+						<img src="./images/baby/002.jpg">
+					</figure>
+					<aside class="right">
+						<h3>
+              <b>妞妞妈</b>儿童教育心理学专业毕业</h3>
+						<p>在妞宝2岁多的时候，在比较了众多线上线下学习平台后，我坚定地选择了宝玩的课程。原因有几点：第一，线上学习，在家上课，每天10分钟，对于职场妈妈来讲，方便易于坚持，而且可以避免线下培训机构因天气原因，因生病原因无法上课的情况。第二，宝玩的课程教家长教孩子，最好的教育来自家庭。课程很务实，无论孩子还是家长的确能从课程中学到实实在在的内容，孩子会用英文沟通交流，家长懂得如何用英文与孩子互动如何陪孩子英语启蒙。第三，游戏互动，动感欢唱的趣味授课形式，让孩子在玩耍中潜移默化地学习英文，这种玩中学的模式孩子非常喜欢，而且不用翻译解释，孩子就能理解英文意思。第四，宝玩课程的专业性，系统性以及不同年龄段选择的不同教学法让我信服。</p>
+						<p>在学习宝玩课程的近一年时间里，我和孩子都发生了很大的变化，坚持跟随，期待更完美的成长！</p>
+					</aside>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class="top">
+			<div class="w">
+				<div class="onefloor">
+					<span class="about">
+            <a href="./about.html">关于我们</a>
+          </span>
+					<span>丨</span>
+					<span class="join">
+            <a href="./join.html">加入我们</a>
+          </span>
+				</div>
+				<div class="twofloor">
+					<img src="./images/footer/gongzhonghao.jpg" alt="">
+					<img src="./images/footer/download.jpg" alt="">
+				</div>
+				<div class="lastfloor">
+					<p>微信公众号</p>
+					<p>宝玩APP下载</p>
+				</div>
+			</div>
+		</div>
+		<div class="bottom">
+			<p style="display:inline-block;text-decoration:none;height:20px;line-height:20px;">
+				<span style="float:left;;margin: 0px 10px 0px 0px;height:20px;line-height:20px;color: #666">京ICP备16005798号</span>
+			</p>
+			<a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010502034347" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;">
+        <img src="images/footer/footrecord.png" style="float:left;" />
+        <p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px;">京公网安备 11010502034347号 北京启萌教育科技有限公司</p>
+      </a>
+		</div>
+	</footer>
+</body>
+<script type="text/javascript">
+	var banCode = document.querySelector('.banCode');
+
+	function show_banCode() {
+		if (banCode.style.display == 'none') {
+			banCode.style.display = 'block';
+		} else {
+			banCode.style.display = 'none';
+		}
+	}
+	// 播放
+	var playBtn = document.querySelector('.playBtn');
+	var postImg = document.querySelector('.posterimg');
+	var player = videojs('oVideo', {
+		preload: 'auto',
+		fluid: false,
+		muted: false,
+		width: 700,
+		bigPlayButton: false,
+		poster: '../images/baby/poster.jpg',
+		controls: true,
+		controlBar: {
+			remainingTimeDisplay: false,
+			playToggle: {},
+			progressControl: {},
+			fullscreenToggle: {},
+			volumeMenuButton: {
+				inline: false,
+				vertical: true
+			}
+		},
+	}, function() {
+		this.on('play', function() {
+			playBtn.style.display = 'none';
+		});
+		this.on('pause', function() {
+			playBtn.style.display = 'block';
+		})
+	})
+
+	playBtn.onclick = function() {
+		player.play();
+		playBtn.style.display = 'none';
+		postImg.style.display = 'none';
+	}
+</script>
+
+<script type="text/javascript" src="http://tajs.qq.com/stats?sId=64268548" charset="UTF-8"></script>
+
+</html>
